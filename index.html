@@ -1,0 +1,85 @@
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>OSM Benches</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<!-- Load Leaflet from CDN -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+
+	<!--
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css"/>
+	-->
+
+
+	<!-- Load Esri Leaflet from CDN -->
+	<script src="https://unpkg.com/esri-leaflet@2.1.1/dist/esri-leaflet.js"
+	integrity="sha512-ECQqaYZke9cSdqlFG08zSkudgrdF6I1d8ViSa7I3VIszJyVqw4ng1G8sehEXlumdMnFYfzY0tMgdQa4WCs9IUw=="
+	crossorigin=""></script>
+
+
+	<!-- Load the jquery-ui CSS -->
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+
+
+	<!-- Load the leaflet-groupedlayercontrol CSS -->
+	<link rel="stylesheet" type="text/css" href="./styles/leaflet.groupedlayercontrol.min.css"/>
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+	<link rel="stylesheet" type="text/css" href="./styles/OSMmaps.css"/>
+
+	<!-- Load the table CSS -->
+	<link rel="stylesheet" type="text/css" href="./styles/table.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<style>
+		body { margin:0;
+			   padding:0;
+			   font-family: 'Roboto';
+			   color: #4d4d4d;
+			 }
+
+		a { color: #4d4d4d; }
+
+		p { word-break: break-all }
+	</style>
+
+</head>
+
+<body>
+
+<!-- Loading jQuery and DataTables -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
+
+<!-- Loading leaflet-groupedlayercontrol -->
+<script src="./scripts/leaflet.groupedlayercontrol.min.js"></script>
+
+<!-- <script src="./scripts/metadata.js"></script> -->
+<div id="parent" style="width:100%; height:100%">
+	<div id="mapid" style="float: right; width:100%; height:90%">
+		<script src="./scripts/map.js"></script>
+	</div>
+	<div id="searcher" style="float: right; width:50%; height:10%">
+		<button type="submit" onclick="findBenches()">Find Benches</button>
+		<div id="osmresponse"></div>
+	</div>
+</div>
+
+<script src='./scripts/osmtogeojson.js'></script>
+<script src="./scripts/OSMmaps.js"></script>
+
+
+</body>
+</html>

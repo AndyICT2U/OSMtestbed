@@ -1,0 +1,103 @@
+table.dataTable {
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table.dataTable td {
+	word-break: break-word;
+	padding: 5px;
+}
+
+table.dataTable td:last-child {
+	padding-right: 2ch;
+}
+
+table.dataTable tr.odd {
+	background-color: rgba(116, 206, 226, .2);
+}
+
+table.dataTable tr.even {
+	background-color: #ffffff;
+}
+
+table.dataTable thead {
+	/*background-color: rgba(116, 206, 226, 1);*/
+	color: #ffffff;
+}
+
+table.dataTable th {
+	height: 5vh;
+}
+
+table.dataTable input {
+	min-width: 10ch;
+	max-width: 18ch;
+	border: 0;
+	padding-left: 3px;
+}
+
+table.dataTable tfoot {
+	background-color: rgba(116, 206, 226, 1);
+}
+
+tfoot th {
+	visibility: hidden;
+}
+
+div.dataTables_scrollHeadInner {
+	background-color: rgba(116, 206, 226, 1);
+}
+
+div.dataTables_scrollFootInner {
+	background-color: rgba(116, 206, 226, 1);
+}
+
+div.dataTables_scrollHead thead {
+	border-bottom: 1px solid rgba(77, 77, 77, .2);
+}
+
+div.dataTables_scrollFoot tfoot {
+	border-top: 1px solid rgba(77, 77, 77, .2);
+}
+
+div.dataTables_scrollHead thead .sorting,
+div.dataTables_scrollHead thead .sorting_asc,
+div.dataTables_scrollHead thead .sorting_desc,
+div.dataTables_scrollHead thead .sorting_asc_disabled,
+div.dataTables_scrollHead thead .sorting_desc_disabled {
+	cursor: pointer;
+	*cursor: hand;
+	background-repeat: no-repeat;
+	background-position: center right; }
+
+table.dataTable div.dataTables_scrollHead thead th {
+	position: relative;
+	background-image: none !important;
+}
+ 
+div.dataTables_scrollHead thead th.sorting:after,
+div.dataTables_scrollHead thead th.sorting_asc:after,
+div.dataTables_scrollHead thead th.sorting_desc:after {
+	position: relative;
+	top: 0px;
+	left: 10px;
+	/*display: block;*/
+	font-family: FontAwesome;
+}
+
+div.dataTables_scrollHead thead th.sorting:after {
+	content: "\f0dc";
+	color: #ffffff;
+	font-size: 0.8em;
+	padding-top: 0.12em;
+}
+
+div.dataTables_scrollHead thead th.sorting_asc:after {
+	content: "\f0de";
+}
+
+div.dataTables_scrollHead thead th.sorting_desc:after {
+	content: "\f0dd";
+}
+
+.dataTables_filter, .dataTables_info { display: none; }
