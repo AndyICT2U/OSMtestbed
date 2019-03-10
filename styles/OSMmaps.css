@@ -1,2 +1,44 @@
 #mapid { height: 180px; }
 
+  .sidebar {
+	margin:0;
+	padding:6px;
+	border-radius:4px;
+	color:rgb(191,173,153);
+	font-family:"Arial", Times, serif;
+	font-size: 0.75em;
+	font-weight: bold;
+	text-align: left;
+	background:rgba(37, 47, 32, 0.8);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+    height: 90%;
+  }
+
+		.mnuCheckbox {
+			cursor: pointer;
+		}
+		.mnuCheckbox input {
+			display: none;
+		}
+		.mnuCheckbox span {
+			width: 12px;
+			height: 12px;
+			border: 2px solid rgb(103, 103, 74);
+			display: inline-block;
+			position: relative;
+		  top: 4px;
+		  left: 0px;
+		  margin-left: 5px;
+		  margin-right: 5px;
+			background:rgb(64, 83, 58);
+		}
+		.mnuCheckbox input:checked + span:before {
+		  content: '\2714';
+		  color:rgb(203, 203, 164);
+		  position: absolute;
+		  top: -1px;
+		  left: 2px;
+		}
+  

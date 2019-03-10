@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset=utf-8 />
-	<title>OSM Benches</title>
+	<title>Lewisham Wellbeing Map test02</title>
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -65,14 +65,19 @@
 
 <!-- Loading leaflet-groupedlayercontrol -->
 <script src="./scripts/leaflet.groupedlayercontrol.min.js"></script>
+<script src='./data/LWM_ADS.js'></script>
+<script src='./data/LWMkmlgeo.js'></script>
+<!-- <script src='./data/LWMarea_OSMexport.js'></script> -->
 
-<!-- <script src="./scripts/metadata.js"></script> -->
+<!-- <script src="./scripts/LWMmetadata.js"></script> -->
+
 <div id="parent" style="width:100%; height:100%">
-	<div id="mapid" style="float: right; width:100%; height:90%">
+	<div id="menuside" class="sidebar" style="width:14%;"></div>
+	<div id="mapid" style="float: right; width:85%; height:90%">
 		<script src="./scripts/map.js"></script>
 	</div>
 	<div id="searcher" style="float: right; width:50%; height:10%">
-		<button type="submit" onclick="findBenches()">Find Benches</button>
+		<button type="submit" onclick="findBenches()">Search OpenStreetMap</button>
 		<div id="osmresponse"></div>
 	</div>
 </div>
