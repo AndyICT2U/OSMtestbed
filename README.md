@@ -11,6 +11,7 @@ The important code snippet is in scripts\OSMmaps.js :-
 
 that calls the Overpass API with 'node' set to filter for amenity=bench.
 
-Update 10th March 2019
+<br>
+<B>Update 10th March 2019</b>
 
 Map interface includes checkboxes for a few example OSM amenities and uses LWM MyMaps data for the Leaflet Layer control. The LWM layers are .js files of the geojson of the MyMaps KML export
